@@ -14,12 +14,12 @@ body {
 }
 
 a {
-  color: #eb5d1e;
-  text-decoration: none;
+    color: #50a7ff;
+    text-decoration: none;
 }
 
 a:hover {
-  color: #ef7f4d;
+  color: 7cbbfb;
   text-decoration: none;
 }
 
@@ -132,10 +132,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #eb5d1e;
+  color: #50a7ff;
 }
 .navbar .getstarted, .navbar .getstarted:focus {
-  background: #eb5d1e;
+  background: #50a7ff;
   color: #fff;
   padding: 10px 25px;
   margin-left: 30px;
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #ee7843;
+  background: #7cbbfb;
 }
 .navbar .dropdown ul {
   display: block;
@@ -291,11 +291,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 70vh;
-  background: #fef8f5;
-  border-bottom: 2px solid #fcebe3;
-  margin: 72px 0 -72px 0;
+    width: 100%;
+    height: 70vh;
+    background: #8cceff;
+    border-bottom: 2px solid #fcebe3;
+    margin: 72px 0 -72px 0;
 }
 #hero h1 {
   margin: 0;
@@ -305,7 +305,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color: #4e4039;
 }
 #hero h2 {
-  color: #a08f86;
+  color: #575555;
   margin: 15px 0 0 0;
   font-size: 24px;
 }
@@ -1032,7 +1032,7 @@ section {
   padding: 0 0 30px 0;
   color: #212529;
   font-size: 14px;
-  background: #fef8f5;
+  background: #8cceff;
 }
 #footer .footer-newsletter {
   padding: 50px 0;
@@ -1118,7 +1118,7 @@ section {
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #f39e7a;
+  color: #50a7ff;
   font-size: 18px;
   line-height: 1;
 }
@@ -1143,7 +1143,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #eb5d1e;
+  background: #50a7ff;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1155,7 +1155,7 @@ section {
   transition: 0.3s;
 }
 #footer .footer-top .social-links a:hover {
-  background: #ef7f4d;
+  background: #7cbbfb;
   color: #fff;
   text-decoration: none;
 }

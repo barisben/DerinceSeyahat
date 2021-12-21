@@ -29,15 +29,16 @@
         <div class="container d-flex align-items-center justify-content-between">
 
             <div class="logo">
-                <h1 class="text-light"><a href="index.html"><span>Ninestars</span></a></h1>
+                <!-- <h1 class="text-light"><a href="index.html"><span>Ninestars</span></a></h1> -->
                 <!-- Uncomment below if you prefer to use an image logo -->
-                <!-- <a href="index.html"><img src="~/img/logo.png" alt="" class="img-fluid"></a> -->
+                <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/dsyazi.png" alt="" class="img-fluid"></a>
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Anasayfa</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Gizlilik</a></li>
+                    <partial name="_LoginPartial" />
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -70,17 +71,21 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h3>Vizyonumuz</h3>
+                        <h3>Hakkımızda</h3>
                         <p>
                         2006 yılından bu yana Kocaeli, İstanbul ve Sakarya illerinde yönetici kadrosu, eğitimli personeli ve günümüz teknolojisinin gereçleriyle donatılmış emniyetli ve konforlu araçlarıyla kaliteli hizmet anlayışını sürekli gözeterek, yol arkadaşlarımıza zamanında ve güvenli hizmet vermeyi amaç edinmiştir.
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h3>Misyonumuz</h3>
-                        <p>
-                            2006 yılından bu yana Kocaeli, İstanbul ve Sakarya illerinde yönetici kadrosu, eğitimli personeli ve günümüz teknolojisinin gereçleriyle donatılmış emniyetli ve konforlu araçlarıyla kaliteli hizmet anlayışını sürekli gözeterek, yol arkadaşlarımıza zamanında ve güvenli hizmet vermeyi amaç edinmiştir.
-                        </p>
+                        <h3>Hizmetlerimiz</h3>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i>Personel Taşımacılığı</li>
+                            <li><i class="bx bx-chevron-right"></i>Öğrenci Taşımacılığı</li>
+                            <li><i class="bx bx-chevron-right"></i>VIP Taşımacılık</li>
+                            <li><i class="bx bx-chevron-right"></i>Organizasyon Taşımacılığı</li>
+                            <li><i class="bx bx-chevron-right"></i>Özel Gün Taşımacılığı</li>
+                        </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
