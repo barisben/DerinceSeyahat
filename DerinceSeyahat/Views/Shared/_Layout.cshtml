@@ -36,8 +36,19 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Anasayfa</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Gizlilik</a></li>
+                    <li><a class="nav-link scrollto active" asp-area="" asp-controller="Home" asp-action="Index">ANASAYFA</a></li>
+                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="About">HAKKIMIZDA</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>HİZMETLERİMİZ</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a asp-area="" asp-controller="Service" asp-action="PersonelTasimaciligi">Personel Taşımacılığı</a></li>
+                            <li><a asp-area="" asp-controller="Service" asp-action="OgrenciTasimaciligi">Öğrenci Taşımacılığı</a></li>
+                            <li><a asp-area="" asp-controller="Service" asp-action="VipTasimaciligi">VIP Taşımacılığı</a></li>
+                            <li><a asp-area="" asp-controller="Service" asp-action="OrganizasyonTasimaciligi">Organizasyon Taşımacılığı</a></li>
+                            <li><a asp-area="" asp-controller="Service" asp-action="OzelGunTasimaciligi">Özel Gün Taşımacılığı</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="About">FİLOMUZ</a></li>
                     <partial name="_LoginPartial" />
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -80,11 +91,11 @@
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h3>Hizmetlerimiz</h3>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i>Personel Taşımacılığı</li>
-                            <li><i class="bx bx-chevron-right"></i>Öğrenci Taşımacılığı</li>
-                            <li><i class="bx bx-chevron-right"></i>VIP Taşımacılık</li>
-                            <li><i class="bx bx-chevron-right"></i>Organizasyon Taşımacılığı</li>
-                            <li><i class="bx bx-chevron-right"></i>Özel Gün Taşımacılığı</li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="PersonelTasimaciligi">Personel Taşımacılığı</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="OgrenciTasimaciligi">Öğrenci Taşımacılığı</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="VipTasimaciligi">VIP Taşımacılığı</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="OrganizasyonTasimaciligi">Organizasyon Taşımacılığı</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="OzelGunTasimaciligi">Özel Gün Taşımacılığı</a></li>
                         </ul>
                     </div>
 
