@@ -471,6 +471,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+    background: #8cceff;
+}
+
 .about h3 {
   font-weight: 700;
   font-size: 34px;
@@ -480,12 +484,12 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin-top: 5px;
-  color: #7a6960;
+  color: #4e4039;
 }
 .about i {
   font-size: 48px;
   margin-top: 15px;
-  color: #f39e7a;
+  color: #50a7ff;
 }
 .about p {
   font-size: 15px;

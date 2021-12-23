@@ -36,7 +36,7 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" asp-area="" asp-controller="Home" asp-action="Index">ANASAYFA</a></li>
+                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="Index">ANASAYFA</a></li>
                     <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="About">HAKKIMIZDA</a></li>
                     <li class="dropdown">
                         <a href="#"><span>HİZMETLERİMİZ</span> <i class="bi bi-chevron-down"></i></a>
@@ -57,11 +57,9 @@
         </div>
     </header><!-- End Header -->
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <main id="main">
+        @RenderBody()
+    </main>
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
