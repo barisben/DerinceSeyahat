@@ -493,8 +493,13 @@ section {
 }
 .about p {
   font-size: 15px;
-  color: #5a6570;
+  color: #212529;
 }
+.about ul{
+    font-size:15px;
+    list-style-type: none;
+}
+
 @media (max-width: 991px) {
   .about .about-img img {
     max-width: 70%;

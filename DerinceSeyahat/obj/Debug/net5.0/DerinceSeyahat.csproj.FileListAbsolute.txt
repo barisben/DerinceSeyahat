@@ -83,7 +83,6 @@ C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.pdb
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.genruntimeconfig.cache
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
-C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Home\Services.cshtml.g.cs
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Service\OgrenciTasimaciligi.cshtml.g.cs
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Service\OrganizasyonTasimaciligi.cshtml.g.cs
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Service\OzelGunTasimaciligi.cshtml.g.cs
