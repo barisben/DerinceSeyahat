@@ -88,3 +88,4 @@ C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Service\OzelGunTasimaciligi.cshtml.g.cs
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Service\PersonelTasimaciligi.cshtml.g.cs
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Service\VipTasimaciligi.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Filo\Index.cshtml.g.cs
