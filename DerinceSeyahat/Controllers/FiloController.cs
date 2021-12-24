@@ -12,5 +12,10 @@ namespace DerinceSeyahat.Controllers
         {
             return View();
         }
+
+        public IActionResult Arac(int id)
+        {
+            return View();
+        }
     }
 }
