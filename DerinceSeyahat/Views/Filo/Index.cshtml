@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<DerinceSeyahat.Models.Arac>
+
+@{
     ViewData["Title"] = "Filomuz";
 }
 
@@ -13,43 +15,22 @@
 
         <div class="row portfolio-container">
 
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <div class="portfolio-wrap">
-                    <img src="~/img/dsmainarac.png" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="~/img/dsmainarac.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-wrap">
+                        <img src="@Url.Content(item.AracImage)" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="@Url.Content(item.AracImage)" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                            <a href="portfolio-details.html" title="Daha Fazla Ayrıntı"><i class="bi bi-link"></i></a>
+                        </div>
+                        <div class="portfolio-info">
+                            <h4>@Html.DisplayFor(modelItem => item.AracModel)</h4>
+                        </div>
                     </div>
                 </div>
+            }
 
-            </div><div class="col-lg-4 col-md-6 portfolio-item">
-                <div class="portfolio-wrap">
-                    <img src="~/img/dsmainarac.png" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="~/img/dsmainarac.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <div class="portfolio-wrap">
-                    <img src="~/img/dsmainarac.png" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                        <a href="~/img/dsmainarac.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                    </div>
-                    <div class="portfolio-info">
-                        <h4>App 1</h4>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section><!-- End Portfolio Section -->

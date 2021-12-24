@@ -1,0 +1,41 @@
+﻿@model DerinceSeyahat.Models.Arac
+
+@{
+    ViewData["Title"] = "Araçlarımız";
+}
+
+<!-- ======= Portfolio Details Section ======= -->
+<section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-8">
+                <div class="portfolio-details-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+
+                        <div class="swiper-slide">
+                            <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="portfolio-info">
+                    <h3>Araç Bilgileri</h3>
+                    <ul>
+                        <li><strong>Marka</strong>: @Html.DisplayFor(model => model.AracMarka)</li>
+                        <li><strong>Model</strong>: @Html.DisplayFor(model => model.AracModel)</li>
+                        <li><strong>Kapasite</strong>: @Html.DisplayFor(model => model.AracKapasite)</li>
+                        <li><strong>Adet</strong>: @Html.DisplayFor(model => model.AracAdet)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Portfolio Details Section -->

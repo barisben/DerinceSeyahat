@@ -10,6 +10,7 @@ namespace DerinceSeyahat.Data
     public class ApplicationDbContext : IdentityDbContext
     {
         public DbSet<Arac> Araclar { get; set; }
+        public object Arac { get; internal set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
