@@ -388,12 +388,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-.section-bg {
-  background-color: #fef8f5;
+    border-bottom: 2px solid #fcebe3;
+    margin: 72px 0 -72px 0;
+    padding: 60px 0;
+    overflow: hidden;
 }
 
 .section-title {
@@ -402,11 +400,11 @@ section {
 }
 .section-title h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   padding-bottom: 0;
   line-height: 1px;
   margin-bottom: 15px;
-  color: #c2b7b1;
+  color: #212529;
 }
 .section-title p {
   padding-bottom: 15px;
@@ -875,10 +873,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #eb5d1e;
+  border: 1px solid #50a7ff;
 }
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #eb5d1e;
+  background-color: #50a7ff;
 }
 
 /*--------------------------------------------------------------
