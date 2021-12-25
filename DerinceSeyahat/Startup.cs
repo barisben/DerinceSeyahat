@@ -1,3 +1,4 @@
+using DerinceSeyahat.DA;
 using DerinceSeyahat.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -45,6 +46,8 @@ namespace DerinceSeyahat
                 options.AddPolicy("writepolicy",
                     builder => builder.RequireRole("Admin", "Manager"));
             });
+
+            services.AddTransient<IAracRepo, AracRepoConcrete>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
