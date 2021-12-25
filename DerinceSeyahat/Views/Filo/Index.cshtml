@@ -22,7 +22,7 @@
                         <img src="@Url.Content(item.AracImage)" class="img-fluid" alt="">
                         <div class="portfolio-links">
                             <a href="@Url.Content(item.AracImage)" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                            <a href="portfolio-details.html" title="Daha Fazla Ayrıntı"><i class="bi bi-link"></i></a>
+                            <a asp-area="" asp-controller="Filo" asp-action="Arac" asp-route-id="@item.AracId" title="Daha Fazla Ayrıntı"><i class="bi bi-link"></i></a>
                         </div>
                         <div class="portfolio-info">
                             <h4>@Html.DisplayFor(modelItem => item.AracModel)</h4>
