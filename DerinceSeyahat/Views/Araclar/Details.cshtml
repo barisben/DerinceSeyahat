@@ -1,0 +1,49 @@
+﻿@model DerinceSeyahat.Models.Arac
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<section class="about">
+    <h1>Details</h1>
+
+    <div>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AracMarka)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AracMarka)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AracModel)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AracModel)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AracKapasite)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AracKapasite)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AracAdet)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.AracAdet)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.AracImage)
+            </dt>
+            <dd class="col-sm-10">
+                <img src="@Url.Content(Model.AracImage)" class="d-block w-50" asp-append-version="true" alt="">
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.AracId">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</section>

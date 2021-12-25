@@ -18,11 +18,10 @@ namespace DerinceSeyahat.Models
         public string AracModel { get; set; }
         [Required(ErrorMessage = "Bu alan zorunlu.")]
         [Display(Name = "Araç Kapasitesi")]
-        public string AracKapasite { get; set; }
+        public int AracKapasite { get; set; }
         [Required(ErrorMessage = "Bu alan zorunlu.")]
         [Display(Name = "Araç Adedi")]
-        public string AracAdet { get; set; }
-        [Required(ErrorMessage = "Bu alan zorunlu.")]
+        public int AracAdet { get; set; }
         [Display(Name = "Araç Fotoğrafı")]
         public string AracImage { get; set; }
 

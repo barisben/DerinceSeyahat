@@ -176,3 +176,8 @@ C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Admin\Roles.cshtml.g.cs
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Admin\UserList.cshtml.g.cs
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Araclar\Create.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Araclar\Delete.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Araclar\Details.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Araclar\Edit.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Araclar\Index.cshtml.g.cs
