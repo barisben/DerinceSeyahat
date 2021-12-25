@@ -117,10 +117,70 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="en" xml:space="preserve">
-    <value>English</value>
+  <data name="About" xml:space="preserve">
+    <value>HAKKIMIZDA</value>
   </data>
-  <data name="tr" xml:space="preserve">
-    <value>Turkish</value>
+  <data name="Aboutl" xml:space="preserve">
+    <value>Hakkımızda</value>
+  </data>
+  <data name="AboutlContent" xml:space="preserve">
+    <value>2006 yılından bu yana Kocaeli, İstanbul ve Sakarya illerinde yönetici kadrosu, eğitimli personeli ve günümüz teknolojisinin gereçleriyle donatılmış emniyetli ve konforlu araçlarıyla kaliteli hizmet anlayışını sürekli gözeterek, yol arkadaşlarımıza zamanında ve güvenli hizmet vermeyi amaç edinmiştir.</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>ADMIN</value>
+  </data>
+  <data name="Certificates" xml:space="preserve">
+    <value>Kalite Sertifikalarımız</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Personel Taşımacılığı</value>
+  </data>
+  <data name="Fleet" xml:space="preserve">
+    <value>FİLOMUZ</value>
+  </data>
+  <data name="FollowUs" xml:space="preserve">
+    <value>Sosyal medya hesaplarımızı takip edin.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>ANASAYFA</value>
+  </data>
+  <data name="KeepFollow" xml:space="preserve">
+    <value>Takipte Kalın!</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Organizasyon Taşımacılığı</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roller</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>HİZMETLERİMİZ</value>
+  </data>
+  <data name="Servicesl" xml:space="preserve">
+    <value>Hizmetlerimiz</value>
+  </data>
+  <data name="SpecialDay" xml:space="preserve">
+    <value>Özel Gün Taşımacılığı</value>
+  </data>
+  <data name="Student" xml:space="preserve">
+    <value>Öğrenci Taşımacılığı</value>
+  </data>
+  <data name="UserList" xml:space="preserve">
+    <value>Kullanıcı Listesi</value>
+  </data>
+  <data name="VehicleList" xml:space="preserve">
+    <value>Araç Listesi</value>
+  </data>
+  <data name="Vip" xml:space="preserve">
+    <value>VIP Taşımacılığı</value>
   </data>
 </root>

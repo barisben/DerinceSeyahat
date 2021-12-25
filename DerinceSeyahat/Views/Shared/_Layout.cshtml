@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -36,29 +38,29 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="Index">ANASAYFA</a></li>
-                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="About">HAKKIMIZDA</a></li>
+                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="Index">@localizer["Home"]</a></li>
+                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Home" asp-action="About">@localizer["About"]</a></li>
                     <li class="dropdown">
-                        <a href="#"><span>HİZMETLERİMİZ</span> <i class="bi bi-chevron-down"></i></a>
+                        <a href="#"><span>@localizer["Services"]</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a asp-area="" asp-controller="Service" asp-action="PersonelTasimaciligi">Personel Taşımacılığı</a></li>
-                            <li><a asp-area="" asp-controller="Service" asp-action="OgrenciTasimaciligi">Öğrenci Taşımacılığı</a></li>
-                            <li><a asp-area="" asp-controller="Service" asp-action="VipTasimaciligi">VIP Taşımacılığı</a></li>
-                            <li><a asp-area="" asp-controller="Service" asp-action="OrganizasyonTasimaciligi">Organizasyon Taşımacılığı</a></li>
-                            <li><a asp-area="" asp-controller="Service" asp-action="OzelGunTasimaciligi">Özel Gün Taşımacılığı</a></li>
+                            <li><a asp-area="" asp-controller="Service" asp-action="PersonelTasimaciligi">@localizer["Employee"]</a></li>
+                            <li><a asp-area="" asp-controller="Service" asp-action="OgrenciTasimaciligi">@localizer["Student"]</a></li>
+                            <li><a asp-area="" asp-controller="Service" asp-action="VipTasimaciligi">@localizer["Vip"]</a></li>
+                            <li><a asp-area="" asp-controller="Service" asp-action="OrganizasyonTasimaciligi">@localizer["Organization"]</a></li>
+                            <li><a asp-area="" asp-controller="Service" asp-action="OzelGunTasimaciligi">@localizer["SpecialDay"]</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Filo" asp-action="Index">FİLOMUZ</a></li>
+                    <li><a class="nav-link scrollto" asp-area="" asp-controller="Filo" asp-action="Index">@localizer["Fleet"]</a></li>
                     @if (User.Identity.IsAuthenticated)
                     {
                         if (User.IsInRole("Admin"))
                         {
                             <li class="dropdown">
-                                <a href="#"><span>ADMIN</span> <i class="bi bi-chevron-down"></i></a>
+                                <a href="#"><span>@localizer["Admin"]</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
-                                    <li><a asp-area="" asp-controller="Admin" asp-action="Roles">Roller</a></li>
-                                    <li><a asp-area="" asp-controller="Admin" asp-action="UserList">Kullanıcı Listesi</a></li>
-                                    <li><a asp-area="" asp-controller="Araclar" asp-action="Index">Araç Listesi</a></li>
+                                    <li><a asp-area="" asp-controller="Admin" asp-action="Roles">@localizer["Roles"]</a></li>
+                                    <li><a asp-area="" asp-controller="Admin" asp-action="UserList">@localizer["UserList"]</a></li>
+                                    <li><a asp-area="" asp-controller="Araclar" asp-action="Index">@localizer["VehicleList"]</a></li>
                                 </ul>
                             </li>
                         }
@@ -80,7 +82,7 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Kalite Sertifikalarımız</h2>
+                <h2>@localizer["Certificates"]</h2>
             </div>
 
             <div class="clients-slider swiper">
@@ -100,7 +102,6 @@
 
         </div>
     </section><!-- End Clients Section -->
-
     <!-- ======= Footer ======= -->
     <footer id="footer">
 
@@ -109,37 +110,37 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>İletişim</h3>
+                        <h3>@localizer["Contact"]</h3>
                         <p>
                             İbni Sina Mahallesi <br>
                             Gülay Sk. No:7-b<br>
                             Derince/Kocaeli <br><br>
-                            <strong>Telefon:</strong> +90 542 804 47 47<br>
-                            <strong>Email:</strong> info@derinceseyahat.com<br>
+                            <strong>@localizer["Phone"]:</strong> +90 542 804 47 47<br>
+                            <strong>@localizer["Email"]:</strong> info@derinceseyahat.com<br>
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h3>Hakkımızda</h3>
+                        <h3>@localizer["Aboutl"]</h3>
                         <p>
-                            2006 yılından bu yana Kocaeli, İstanbul ve Sakarya illerinde yönetici kadrosu, eğitimli personeli ve günümüz teknolojisinin gereçleriyle donatılmış emniyetli ve konforlu araçlarıyla kaliteli hizmet anlayışını sürekli gözeterek, yol arkadaşlarımıza zamanında ve güvenli hizmet vermeyi amaç edinmiştir.
+                            @localizer["AboutlContent"]
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h3>Hizmetlerimiz</h3>
+                        <h3>@localizer["Servicesl"]</h3>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="PersonelTasimaciligi">Personel Taşımacılığı</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="OgrenciTasimaciligi">Öğrenci Taşımacılığı</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="VipTasimaciligi">VIP Taşımacılığı</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="OrganizasyonTasimaciligi">Organizasyon Taşımacılığı</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="OzelGunTasimaciligi">Özel Gün Taşımacılığı</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="PersonelTasimaciligi">@localizer["Employee"]</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="OgrenciTasimaciligi">@localizer["Student"]</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="VipTasimaciligi">@localizer["Vip"]</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="OrganizasyonTasimaciligi">@localizer["Organization"]</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a asp-area="" asp-controller="Service" asp-action="OzelGunTasimaciligi">@localizer["SpecialDay"]</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h3>Takipte Kalın!</h3>
-                        <p>Sosyal medya hesaplarımızı takip edin.</p>
+                        <h3>@localizer["KeepFollow"]</h3>
+                        <p>@localizer["FollowUs"]</p>
                         <div class="social-links mt-3">
                             <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                             <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>

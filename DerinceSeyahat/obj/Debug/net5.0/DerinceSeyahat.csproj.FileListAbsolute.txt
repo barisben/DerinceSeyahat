@@ -183,9 +183,11 @@ C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Araclar\Index.cshtml.g.cs
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\bin\Debug\net5.0\en\DerinceSeyahat.resources.dll
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\bin\Debug\net5.0\tr\DerinceSeyahat.resources.dll
-C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Shared._Culture.en.resources
-C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Shared._Culture.tr.resources
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.csproj.GenerateResource.cache
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\en\DerinceSeyahat.resources.dll
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\tr\DerinceSeyahat.resources.dll
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Shared\_Culture.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Shared._Culture.en.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Shared._Culture.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Shared._Layout.en.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Shared._Layout.tr.resources

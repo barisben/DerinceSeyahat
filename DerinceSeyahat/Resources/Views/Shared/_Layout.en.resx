@@ -117,10 +117,70 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="en" xml:space="preserve">
-    <value>English</value>
+  <data name="About" xml:space="preserve">
+    <value>ABOUT US</value>
   </data>
-  <data name="tr" xml:space="preserve">
-    <value>Turkish</value>
+  <data name="Aboutl" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="AboutlContent" xml:space="preserve">
+    <value>Since 2006, it has aimed to provide timely and safe service to our fellow travelers by constantly observing the understanding of quality service with its managerial staff, trained personnel and safe and comfortable vehicles equipped with today's technology equipment in Kocaeli, Istanbul and Sakarya provinces.</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>ADMIN</value>
+  </data>
+  <data name="Certificates" xml:space="preserve">
+    <value>Quality Certificates</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Employee Transportation</value>
+  </data>
+  <data name="Fleet" xml:space="preserve">
+    <value>OUR FLEET</value>
+  </data>
+  <data name="FollowUs" xml:space="preserve">
+    <value>Follow our social media accounts.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>HOME PAGE</value>
+  </data>
+  <data name="KeepFollow" xml:space="preserve">
+    <value>Keep Following Us!</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Organization Transportation</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>OUR SERVICES</value>
+  </data>
+  <data name="Servicesl" xml:space="preserve">
+    <value>Our Services</value>
+  </data>
+  <data name="SpecialDay" xml:space="preserve">
+    <value>Special Day Transportation</value>
+  </data>
+  <data name="Student" xml:space="preserve">
+    <value>Student Transportation</value>
+  </data>
+  <data name="UserList" xml:space="preserve">
+    <value>User List</value>
+  </data>
+  <data name="VehicleList" xml:space="preserve">
+    <value>Vehicle List</value>
+  </data>
+  <data name="Vip" xml:space="preserve">
+    <value>VIP Transportation</value>
   </data>
 </root>
