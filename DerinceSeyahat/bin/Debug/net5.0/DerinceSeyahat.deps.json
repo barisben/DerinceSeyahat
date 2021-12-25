@@ -321,6 +321,14 @@
         "runtime": {
           "DerinceSeyahat.dll": {}
         },
+        "resources": {
+          "en/DerinceSeyahat.resources.dll": {
+            "locale": "en"
+          },
+          "tr/DerinceSeyahat.resources.dll": {
+            "locale": "tr"
+          }
+        },
         "compile": {
           "DerinceSeyahat.dll": {}
         }
