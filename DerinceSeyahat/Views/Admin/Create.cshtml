@@ -1,11 +1,13 @@
-﻿@model Microsoft.AspNetCore.Identity.IdentityRole
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@model Microsoft.AspNetCore.Identity.IdentityRole
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = @localizer["Title"];
 }
 
 <section class="about">
-    <h1>Rol Oluştur</h1>
+    <h1>@localizer["Create"]</h1>
     <hr />
     <div class="row">
         <div class="col-md-4">
@@ -17,14 +19,14 @@
                     <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Oluştur" class="btn btn-primary" />
+                    <input type="submit" value=@localizer["Value"] class="btn btn-primary" />
                 </div>
             </form>
         </div>
     </div>
     <br />
     <div>
-        <a asp-action="Index">Listeye Geri Dön</a>
+        <a asp-action="Index">@localizer["Back"]</a>
     </div>
     @section Scripts {
         @{await Html.RenderPartialAsync("_ValidationScriptsPartial");
