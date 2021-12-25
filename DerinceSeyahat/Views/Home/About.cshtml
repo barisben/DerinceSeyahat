@@ -1,5 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Hakkımızda";
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@{
+    ViewData["Title"] = @localizer["Title"];
 }
 
 <!-- ======= About Section ======= -->
@@ -11,18 +13,18 @@
                 <img src="~/img/dsbademgroup.png" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-5 pt-lg-0">
-                <h3>Biz Kimiz?</h3>
+                <h3>@localizer["WhoAreWe"]</h3>
                 <p>
-                    Badem Group kuruluşu Derince Seyahat, 2006 yılından bu yana Kocaeli, İstanbul ve Sakarya illerinde yönetici kadrosu, eğitimli personeli ve günümüz teknolojisinin gereçleriyle donatılmış emniyetli ve konforlu araçlarıyla kaliteli hizmet anlayışını sürekli gözeterek, yol arkadaşlarımıza zamanında ve güvenli hizmet vermeyi amaç edinmiştir.
+                    @localizer["WhoAreWeContext"]
                 </p>
                 <div class="row">
                     <div class="col-md-12">
                         <i class="bx bx-receipt"></i>
-                        <h4>Çalışanlarımız</h4>
-                        <p>✓ Psikoteknik teste tabi tutulmuş, ilkyardım ve acil müdahale, ileri sürüş teknikleri eğitimleri almıştır.</p>
-                        <p>✓ Trafik kurallarına uyar. Taşıdığı personele karşı kibar, güler yüzlü ve anlayışlıdır.</p>
-                        <p>✓ İnsan taşıdığının ve insan hayatının önemli olduğunun bilincinde olarak görev yapar.</p>
-                        <p>✓ Müşteri memnuniyetine önem verir.</p>
+                        <h4>@localizer["Staff"]</h4>
+                        <p>✓ @localizer["StaffContext1"]</p>
+                        <p>✓ @localizer["StaffContext2"]</p>
+                        <p>✓ @localizer["StaffContext3"]</p>
+                        <p>✓ @localizer["StaffContext4"]</p>
                     </div>
                 </div>
             </div>

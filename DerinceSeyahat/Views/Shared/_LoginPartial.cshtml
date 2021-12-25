@@ -1,24 +1,25 @@
 ﻿@using Microsoft.AspNetCore.Identity
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
 @if (SignInManager.IsSignedIn(User))
 {
     <li>
-        <a  class="getstarted scrollto" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@User.Identity.Name</a>
+        <a class="getstarted scrollto" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@User.Identity.Name</a>
     </li>
     <li>
-        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-            <button type="submit" class="getstarted scrollto">Çıkış Yap</button>
+        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button type="submit" class="getstarted scrollto">@localizer["Logout"]</button>
         </form>
     </li>
 }
 else
 {
     <li>
-        <a class="getstarted scrollto" asp-area="Identity" asp-page="/Account/Login">Giriş Yap</a>
+        <a class="getstarted scrollto" asp-area="Identity" asp-page="/Account/Login">@localizer["Login"]</a>
     </li>
     <li>
-        <a class="getstarted scrollto" asp-area="Identity" asp-page="/Account/Register">Kayıt Ol</a>
+        <a class="getstarted scrollto" asp-area="Identity" asp-page="/Account/Register">@localizer["Register"]</a>
     </li>
 }
