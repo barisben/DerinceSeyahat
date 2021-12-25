@@ -164,3 +164,13 @@ C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\bin\Debug\net5.
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Filo\Arac.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Role\Create.cshtml.g.cs
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\Razor\Views\Role\Index.cshtml.g.cs

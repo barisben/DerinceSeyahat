@@ -477,10 +477,10 @@ section {
   color: #4e4039;
 }
 .about h4 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 600;
   margin-top: 5px;
-  color: #4e4039;
+  color: #212529;
 }
 .about i {
   font-size: 48px;
@@ -488,12 +488,21 @@ section {
   color: #50a7ff;
 }
 .about p {
-  font-size: 15px;
+  font-size: 12px;
   color: #212529;
 }
 .about ul{
     font-size:15px;
     list-style-type: none;
+}
+
+.about a {
+      font-size: 17px;
+      font-weight: 600;
+      margin-top: 3px;
+    color: #212529;
+    transition: 0.3s;
+    display: inline-block;
 }
 
 @media (max-width: 991px) {
@@ -671,6 +680,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+    background: #8cceff;
 }
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
@@ -1146,7 +1156,7 @@ section {
 }
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #eb5d1e;
+  color: #50a7ff;
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
