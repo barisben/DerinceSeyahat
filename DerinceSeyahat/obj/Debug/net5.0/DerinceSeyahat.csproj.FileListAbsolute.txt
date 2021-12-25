@@ -197,3 +197,13 @@ C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Home.Index.tr.resources
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Home.About.tr.resources
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Home.About.en.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.OgrenciTasimaciligi.en.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.OgrenciTasimaciligi.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.OrganizasyonTasimaciligi.en.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.OrganizasyonTasimaciligi.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.OzelGunTasimaciligi.en.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.OzelGunTasimaciligi.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.PersonelTasimaciligi.en.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.PersonelTasimaciligi.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.VipTasimaciligi.en.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.VipTasimaciligi.tr.resources

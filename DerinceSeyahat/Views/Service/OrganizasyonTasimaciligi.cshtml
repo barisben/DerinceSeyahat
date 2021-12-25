@@ -1,5 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Organizasyon Taşımacılığı";
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@{
+    ViewData["Title"] = @localizer["Title"];
 }
 
 <section id="about" class="about">
@@ -9,10 +11,10 @@
             <h1>@ViewData["Title"]</h1>
 
             <p>
-                Kurumsal ve bireysel gezi, kültür turları ve her türlü toplu organizasyon ulaşımlarınız için ekibimizle, unutulmayacak güzellikte zaman geçireceğiniz özel tur programları sunuyoruz. Türkiye’de gezilecek ve görülecek yerlerin en iyi organizasyonlarla gezilebilmesi, keyifle seyahat edilmesi ve günlük hayatın sıradanlıklarından, stresinden uzak tatiller yaşamanızı sağlamak üzere çalışıyoruz. Tek yapmanız gereken bizimle iletişime geçerek gerekli organizasyon için talebinizi iletmek.
+                @localizer["Context1"]
             </p>
             <p>
-                Yüzyıllar boyunca bir çok medeniyete ev sahipliği yapmış, tarih boyunca hep önemli bir yere sahip olmuş ülkemizin tarihi ve turistik yerlerini Derince Seyahat güvencesi ile gezebilir, günübirlik veya konaklamalı turlarımız ile keyifli, çok özel yolculuklara çıkabilirsiniz.
+                @localizer["Context2"]
             </p>
         </div>
     </div>

@@ -1,5 +1,7 @@
-﻿@{
-    ViewData["Title"] = "VIP Taşımacılığı";
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@{
+    ViewData["Title"] = @localizer["Title"];
 }
 
 <section id="about" class="about">
@@ -9,13 +11,13 @@
             <h1>@ViewData["Title"]</h1>
 
             <p>
-                VIP transfer ulaşımlarınızda en üst segment ve donanıma sahip, son model araçlarımızla ve eğitimli, profesyonel ekibimizle, yolculuğunuz süresince sunulabilecek tüm ayrıcalıklardan maksimum seviyede faydalanmanızı sağlamak üzere çalışıyoruz.
+                @localizer["Context1"]
             </p>
             <p>
-                Deneyimli sürücü ve personelimiz kendinizi özel hissetmenizi sağlarken size yolculuğun konforunu yaşamak kalıyor. Havaalanına inen yolcularımızı ismi yazılı levha ile karşılıyor, bagaj dahil gerekli tüm konularda yardımcı olarak, hazır bekleyen araca kadar eşlik ediyor, istenilen adrese rahat ve konforlu şekilde ulaşılmasını sağlıyoruz.
+                @localizer["Context2"]
             </p>
             <p>
-                Protokol VIP taşıma hizmetlerimizi; özel şoför ve talepler doğrultusunda tercüman personelimiz ile gerçekleştiriyoruz. Ayrıca havaalanları, otel transferleri ve istenilen lokasyonlar için VIP hizmet talep eden müşterilerimize alternatif seçenekler sunuyoruz.
+                @localizer["Context3"]
             </p>
         </div>
     </div>

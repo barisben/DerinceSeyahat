@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Context1" xml:space="preserve">
+    <value>We offer student transportation service with the highest level of sensitivity, with our experienced staff who know their responsibilities, considering all kinds of needs and comfort of our children, who are our most valuable assets, during their transportation to school.</value>
+  </data>
+  <data name="Context10" xml:space="preserve">
+    <value>When the service vehicle exceeds the speed limit, they are instantly informed with a warning message,</value>
+  </data>
+  <data name="Context11" xml:space="preserve">
+    <value>They are informed by instant messages about when their child gets on the shuttle, where and at what time,</value>
+  </data>
+  <data name="Context12" xml:space="preserve">
+    <value>When the child does not get on the service vehicle, they are immediately informed with a warning message,</value>
+  </data>
+  <data name="Context13" xml:space="preserve">
+    <value>In case of delay of the service, they receive an instant warning message and thus they do not wait outside unnecessarily,</value>
+  </data>
+  <data name="Context14" xml:space="preserve">
+    <value>If their child will not get on the bus that day, they can share information through the application or website without calling the driver.</value>
+  </data>
+  <data name="Context15" xml:space="preserve">
+    <value>We pay special attention to the seat belt, which is one of the most important conditions of our life safety and safe traffic flow. In the projects we provide transportation, we provide our driver and guide personnel with training on three-point seat belts and basic traffic information, and we carry our children, who are our future, safely.</value>
+  </data>
+  <data name="Context2" xml:space="preserve">
+    <value>Smart Vehicle Tracking Devices that we use as a standard in our vehicles, as the leading student transportation company of the sector, we enable all our parents to track the speed and location of the vehicles online via mobile applications. In addition, 500 m. to the address where their children will be picked up or dropped off. We offer you the opportunity to receive information via SMS from your mobile phone.</value>
+  </data>
+  <data name="Context3" xml:space="preserve">
+    <value>With our other sensitivities about security, we take our students from their doors through our hostesses, deliver them to their schools safely with our comfortable shuttles and deliver them to their teachers. Again, thanks to mobile applications, we share delivery information with our parents.</value>
+  </data>
+  <data name="Context4" xml:space="preserve">
+    <value>With this app you:</value>
+  </data>
+  <data name="Context5" xml:space="preserve">
+    <value>It can ensure that your students and parents receive safer and uninterrupted service,</value>
+  </data>
+  <data name="Context6" xml:space="preserve">
+    <value>You can follow the routes, movements and speed of the service vehicles instantly and retrospectively,</value>
+  </data>
+  <data name="Context7" xml:space="preserve">
+    <value>You can continue your education and training without interruption, as the shuttle vehicles will be at the school on time.</value>
+  </data>
+  <data name="Context8" xml:space="preserve">
+    <value>With this app, our parents:</value>
+  </data>
+  <data name="Context9" xml:space="preserve">
+    <value>They can monitor every movement of the service vehicle instantly and retrospectively,</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Student Transportation</value>
+  </data>
+</root>

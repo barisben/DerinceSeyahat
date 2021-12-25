@@ -1,5 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Personel Taşımacılığı";
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@{
+    ViewData["Title"] = @localizer["Title"];
 }
 
 <section id="about" class="about">
@@ -9,16 +11,16 @@
             <h1>@ViewData["Title"]</h1>
 
             <p>
-                Personel taşımacılığını; bilgi, tecrübe ve ilkeli hizmet anlayışıyla sürdüren markamız, hizmet sunduğu firmaların personellerini konforlu ve güvenli olarak, talep edilen lokasyona ulaştırmayı hedef edinmiştir. Deneyimli, güler yüzlü, uzman, kaliteli personel taşımacılığı personelimizle istenilen zamanda, dakik hizmet sunuyoruz.
+                @localizer["Context1"]
             </p>
             <p>
-                Personel taşımacılığı çalışanlarımız, kurumsal kimliğimize ve markamıza ait özel işaretler taşıyan, standart tip giyimleri ile farklılığımızı ifade ediyor. Personel taşımacılığı yapan tüm sürücülerimiz için gerekli olan tüm belge ve raporları güncel olarak takip ederek, sürekli kontroller ile kurumsal kaynak planlama yazılımı gibi dijital platformlarda arşivliyoruz. Personel taşımacılığı sürücülerimizin gerekli belge ve sertifikasyonlarını sağlamakla birlikte, "Psikoteknik Yeterlilik" belgesi ve "Güvenli Sürüş Teknikleri" eğitimleri almasını sağlıyoruz. Belge ve raporların takibinin yanı sıra denetim birimimizle düzenlediğimiz denetimlerle araçlarda bulunması zorunlu olan ekipmanların kontrolünü sağlıyor, kuralların uygulandığından emin oluyoruz. Tablet bilgisayarlarla gerçekleştirilen bu denetimlerin sonuçlarını anlık olarak hem operasyon sorumlularımızla, hem de firma yetkileriyle paylaşarak süreci şeffaf bir şekilde yönetiyoruz. İstanbul gibi büyük metropollerde yaşanılan en büyük sorunlardan birisi olan zaman ile ilgili problemleri minumuma indirgeyerek; profesyonel kadromuz, A+ donanıma sahip araçlarımızla, ilkelerimizden taviz vermeden, kusursuz hizmet anlayışıyla çalışıyoruz.
+                @localizer["Context2"]
             </p>
             <p>
-                Personel taşımacılığı için ihtiyaçlarınıza özel çözümler sunmak üzere; istenilen marka ve modelde, geniş araç filosu ile faaliyet gösteriyoruz. Derince Seyahat ailesi olarak üst yönetim, yönetici, proje ekibi ve sürücü kadrosu ile birlikte, müşterilerimizin gitmek istedikleri lokasyona huzur ve güvenle ulaşması için sonsuz müşteri memnuniyeti prensibi ile hizmet sunuyoruz..
+                @localizer["Context3"]
             </p>
             <p>
-                Derince Seyahat, personel taşımacılığı sektöründe aranılan, güvenilir, önder ve hizmet kalitesinde liderdir. Müşteri memnuniyetinin bilincinde bir firma olmayı esas alır ve kalite yönetim sistemi performansını gözden geçirerek, etkinliğini sürekli iyileştirmeyi amaçlar.
+                @localizer["Context4"]
             </p>
         </div>
     </div>

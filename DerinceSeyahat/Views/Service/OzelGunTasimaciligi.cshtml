@@ -1,5 +1,7 @@
-﻿@{
-    ViewData["Title"] = "Özel Gün Taşımacılığı";
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@{
+    ViewData["Title"] = @localizer["Title"];
 }
 
 <section id="about" class="about">
@@ -9,7 +11,7 @@
             <h1>@ViewData["Title"]</h1>
 
             <p>
-                Firmaların, özel yemek, bayi toplantısı, seminer, fuar vb. faaliyetlerine yönelik programlarında, tecrübeli kaptanlarımızla katılımcıların adreslerinden alınması ve ulaştırılması için otobüs, minibüs, özel oto temin edilmesi program süresince beklenmesi ve istenildiğinde dönülmesi.
+                @localizer["Context1"]
             </p>
         </div>
     </div>
