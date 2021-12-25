@@ -207,3 +207,7 @@ C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.PersonelTasimaciligi.tr.resources
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.VipTasimaciligi.en.resources
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Service.VipTasimaciligi.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Filo.Arac.en.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Filo.Arac.tr.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Filo.Index.en.resources
+C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Filo.Index.tr.resources

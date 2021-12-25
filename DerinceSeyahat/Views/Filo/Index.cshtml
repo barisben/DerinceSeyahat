@@ -1,7 +1,9 @@
-﻿@model IEnumerable<DerinceSeyahat.Models.Arac>
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@model IEnumerable<DerinceSeyahat.Models.Arac>
 
 @{
-    ViewData["Title"] = "Filomuz";
+    ViewData["Title"] = @localizer["Title"];
 }
 
 <!-- ======= Portfolio Section ======= -->
@@ -10,7 +12,7 @@
 
         <div class="section-title">
             <h2>@ViewData["Title"]</h2>
-            <p>Filomuza göz atın!</p>
+            <p>@localizer["CheckOut"]</p>
         </div>
 
         <div class="row portfolio-container">
@@ -22,7 +24,7 @@
                         <img src="@Url.Content(item.AracImage)" class="img-fluid" alt="">
                         <div class="portfolio-links">
                             <a href="@Url.Content(item.AracImage)" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bi bi-plus"></i></a>
-                            <a asp-area="" asp-controller="Filo" asp-action="Arac" asp-route-id="@item.AracId" title="Daha Fazla Ayrıntı"><i class="bi bi-link"></i></a>
+                            <a asp-area="" asp-controller="Filo" asp-action="Arac" asp-route-id="@item.AracId" title=@localizer["MoreDetail"]><i class="bi bi-link"></i></a>
                         </div>
                         <div class="portfolio-info">
                             <h4>@Html.DisplayFor(modelItem => item.AracModel)</h4>
