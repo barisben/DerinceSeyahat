@@ -1,29 +1,31 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace DerinceSeyahat.Controllers
 {
     [Authorize(Roles = "Admin")]
-    public class RoleController : Controller
+    public class AdminController : Controller
     {
-        RoleManager<IdentityRole> roleManager;
+        private UserManager<IdentityUser> userManager;
+        private RoleManager<IdentityRole> roleManager;
 
-        public RoleController(RoleManager<IdentityRole> roleManager)
+        public AdminController(RoleManager<IdentityRole> roleManager, UserManager<IdentityUser> userManager)
         {
             this.roleManager = roleManager;
+            this.userManager = userManager;
         }
 
-        [Authorize(Policy = "readpolicy")]
-        public IActionResult Index()
+        public IActionResult Roles()
         {
             var roles = roleManager.Roles.ToList();
             return View(roles);
         }
 
-        [Authorize(Policy = "writepolicy")]
         public IActionResult Create()
         {
             return View(new IdentityRole());
@@ -34,6 +36,12 @@ namespace DerinceSeyahat.Controllers
         {
             await roleManager.CreateAsync(role);
             return RedirectToAction("Index");
+        }
+
+        public IActionResult UserList()
+        {
+            var users = userManager.Users.ToList();
+            return View(users);
         }
     }
 }
