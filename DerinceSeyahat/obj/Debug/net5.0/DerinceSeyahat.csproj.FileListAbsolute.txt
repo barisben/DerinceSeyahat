@@ -217,7 +217,6 @@ C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Admin.Roles.tr.resources
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Admin.UserList.en.resources
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Admin.UserList.tr.resources
-C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Models.Arac.en.resources
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Araclar.Index.en.resources
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Araclar.Index.tr.resources
 C:\Users\Baris Yilmaz\source\repos\DerinceSeyahat\DerinceSeyahat\obj\Debug\net5.0\DerinceSeyahat.Resources.Views.Araclar.Create.en.resources
