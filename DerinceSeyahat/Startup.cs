@@ -17,6 +17,9 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
+using DerinceSeyahat.Models;
+using System.Reflection;
+using DerinceSeyahat.Resources;
 
 namespace DerinceSeyahat
 {
@@ -56,7 +59,16 @@ namespace DerinceSeyahat
             services.AddControllersWithViews();
             services.AddRazorPages();
 
-            services.AddAuthorization(options => {
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequiredLength = 3;
+            });
+
+                services.AddAuthorization(options => {
                 options.AddPolicy("readpolicy",
                     builder => builder.RequireRole("Admin", "Manager", "User"));
                 options.AddPolicy("writepolicy",
@@ -65,8 +77,18 @@ namespace DerinceSeyahat
 
             services.AddTransient<IAracRepo, AracRepoConcrete>();
 
+            services.AddSingleton<IdentityLocalizationService>();
+            services.AddSingleton<SharedLocalizationService>();
             services.AddLocalization(opt => { opt.ResourcesPath = "Resources"; });
-            services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization();
+            services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization(options =>
+                {
+                    options.DataAnnotationLocalizerProvider = (type, factory) =>
+                    {
+                        var assemblyName = new AssemblyName(typeof(IdentityResource).GetTypeInfo().Assembly.FullName);
+                        return factory.Create("IdentityResource", assemblyName.Name);
+                    };
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -100,6 +122,7 @@ namespace DerinceSeyahat
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
+
         }
     }
 }

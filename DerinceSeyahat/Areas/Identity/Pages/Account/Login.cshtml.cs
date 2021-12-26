@@ -11,6 +11,9 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Localization;
+using DerinceSeyahat.Resources;
+using System.Reflection;
 
 namespace DerinceSeyahat.Areas.Identity.Pages.Account
 {
@@ -20,14 +23,20 @@ namespace DerinceSeyahat.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly IStringLocalizer _identityLocalizer;
 
-        public LoginModel(SignInManager<IdentityUser> signInManager, 
+        public LoginModel(SignInManager<IdentityUser> signInManager,
             ILogger<LoginModel> logger,
-            UserManager<IdentityUser> userManager)
+            UserManager<IdentityUser> userManager,
+            IStringLocalizerFactory factory)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+
+            var type = typeof(IdentityResource);
+            var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+            _identityLocalizer = factory.Create("IdentityResource", assemblyName.Name);
         }
 
         [BindProperty]
@@ -42,15 +51,15 @@ namespace DerinceSeyahat.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
+            [Required(ErrorMessage = "EMAIL_REQUIRED")]
             [EmailAddress]
             public string Email { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "PASSWORD_REQUIRED")]
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
-            [Display(Name = "Remember me?")]
+            [Display(Name = "REMEMBER_ME")]
             public bool RememberMe { get; set; }
         }
 
@@ -76,7 +85,7 @@ namespace DerinceSeyahat.Areas.Identity.Pages.Account
             returnUrl ??= Url.Content("~/");
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-        
+
             if (ModelState.IsValid)
             {
                 // This doesn't count login failures towards account lockout

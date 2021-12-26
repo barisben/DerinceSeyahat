@@ -322,11 +322,11 @@
           "DerinceSeyahat.dll": {}
         },
         "resources": {
-          "tr/DerinceSeyahat.resources.dll": {
-            "locale": "tr"
-          },
           "en/DerinceSeyahat.resources.dll": {
             "locale": "en"
+          },
+          "tr/DerinceSeyahat.resources.dll": {
+            "locale": "tr"
           }
         },
         "compile": {

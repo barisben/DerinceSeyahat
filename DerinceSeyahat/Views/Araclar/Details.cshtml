@@ -1,11 +1,13 @@
-﻿@model DerinceSeyahat.Models.Arac
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
+@model DerinceSeyahat.Models.Arac
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = @localizer["Title"];
 }
 
 <section class="about">
-    <h1>Details</h1>
+    <h1>@ViewData["Title"]</h1>
 
     <div>
         <hr />
@@ -43,7 +45,7 @@
         </dl>
     </div>
     <div>
-        <a asp-action="Edit" asp-route-id="@Model.AracId">Edit</a> |
-        <a asp-action="Index">Back to List</a>
+        <a asp-action="Edit" asp-route-id="@Model.AracId">@localizer["Edit"]</a> |
+        <a asp-action="Index">@localizer["Back"]</a>
     </div>
 </section>

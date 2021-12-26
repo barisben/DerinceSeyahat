@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using DerinceSeyahat.Resources;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -12,6 +14,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 
 namespace DerinceSeyahat.Areas.Identity.Pages.Account
@@ -24,19 +27,25 @@ namespace DerinceSeyahat.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IStringLocalizer _identityLocalizer;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
-            RoleManager<IdentityRole> roleManager)
+            RoleManager<IdentityRole> roleManager,
+            IStringLocalizerFactory factory)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
             _roleManager = roleManager;
+
+            var type = typeof(IdentityResource);
+            var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+            _identityLocalizer = factory.Create("IdentityResource", assemblyName.Name);
         }
 
         [BindProperty]
@@ -48,19 +57,19 @@ namespace DerinceSeyahat.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
+            [Required(ErrorMessage = "EMAIL_REQUIRED")]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [Required(ErrorMessage = "PASSWORD_REQUIRED")]
+            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
             [DataType(DataType.Password)]
-            [Display(Name = "Password")]
+            [Display(Name = "PASSWORD")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
-            [Display(Name = "Confirm password")]
+            [Display(Name = "CONFIRM_PASSWORD")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
             public string Name { get; set; }
