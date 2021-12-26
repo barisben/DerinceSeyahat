@@ -77,6 +77,7 @@ namespace DerinceSeyahat.Controllers
                     files[0].CopyTo(fileStream);
                 }
                 arac.AracImage = @"\img\araclar\" + fileName + extension;
+                arac.CurrentAracImage = arac.AracImage;
 
                 _context.Add(arac);
                 await _context.SaveChangesAsync();
@@ -106,7 +107,7 @@ namespace DerinceSeyahat.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AracId,AracMarka,AracModel,AracKapasite,AracAdet,AracImage")] Arac arac)
+        public async Task<IActionResult> Edit(int id, [Bind("AracId,AracMarka,AracModel,AracKapasite,AracAdet,CurrentAracImage,AracImage")] Arac arac)
         {
             if (id != arac.AracId)
             {
@@ -119,17 +120,24 @@ namespace DerinceSeyahat.Controllers
                 {
                     string webRootPath = _hostingEnvironment.WebRootPath;
                     var files = HttpContext.Request.Form.Files;
-
-
                     string fileName = Guid.NewGuid().ToString();
                     var uploads = Path.Combine(webRootPath, @"img\araclar");
-                    var extension = Path.GetExtension(files[0].FileName);
-
-                    using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+                    if (files.Count > 0)
                     {
-                        files[0].CopyTo(fileStream);
+                        
+                        var extension = Path.GetExtension(files[0].FileName);
+
+                        using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
+                        {
+                            files[0].CopyTo(fileStream);
+                        }
+                        arac.AracImage = @"\img\araclar\" + fileName + extension;
+                        arac.CurrentAracImage = arac.AracImage;
                     }
-                    arac.AracImage = @"\img\araclar\" + fileName + extension;
+                    else
+                    {
+                        arac.AracImage = arac.CurrentAracImage;
+                    }
 
                     _context.Update(arac);
                     await _context.SaveChangesAsync();

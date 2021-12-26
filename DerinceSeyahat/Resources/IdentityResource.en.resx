@@ -582,4 +582,25 @@
   <data name="VERIFICATION_SENT" xml:space="preserve">
     <value>Verification email sent. Please check your email.</value>
   </data>
+  <data name="Araç Adedi" xml:space="preserve">
+    <value>Count of Vehicle</value>
+  </data>
+  <data name="Araç Fotoğrafı" xml:space="preserve">
+    <value>Image of Vehicle</value>
+  </data>
+  <data name="Araç Kapasitesi" xml:space="preserve">
+    <value>Capacity of Vehicle</value>
+  </data>
+  <data name="Araç Markası" xml:space="preserve">
+    <value>Brand of Vehicle</value>
+  </data>
+  <data name="Araç Modeli" xml:space="preserve">
+    <value>Model of Vehicle</value>
+  </data>
+  <data name="Bu alan zorunlu." xml:space="preserve">
+    <value>This field is required.</value>
+  </data>
+  <data name="Güncel Araç Fotoğrafı" xml:space="preserve">
+    <value>Current Image of Vehicle</value>
+  </data>
 </root>

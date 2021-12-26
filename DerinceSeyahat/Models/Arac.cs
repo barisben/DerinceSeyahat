@@ -8,6 +8,7 @@ namespace DerinceSeyahat.Models
 {
     public class Arac
     {
+
         [Key]
         public int AracId { get; set; }
         [Required(ErrorMessage = "Bu alan zorunlu.")]
@@ -22,6 +23,8 @@ namespace DerinceSeyahat.Models
         [Required(ErrorMessage = "Bu alan zorunlu.")]
         [Display(Name = "Araç Adedi")]
         public int AracAdet { get; set; }
+        [Display(Name = "Güncel Araç Fotoğrafı")]
+        public string CurrentAracImage { get; set; }
         [Display(Name = "Araç Fotoğrafı")]
         public string AracImage { get; set; }
 
